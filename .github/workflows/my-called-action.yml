@@ -5,9 +5,6 @@ on:
       first-name:
         required: true
         type: string
-    secrets:
-      last-name:
-        required: true
 
 jobs:
   reusable_workflow_job:
@@ -16,4 +13,4 @@ jobs:
        - name: say something
          run: |
              echo "Firstname is ${inputs.first-name}"
-             echo "lastname is ${secrets.last-name}"
+

@@ -1,0 +1,20 @@
+name: my called workflow
+on:
+  workflow_call:
+    inputs:
+      first-name:
+        required: true
+        type: string
+    secrets:
+      last-name:
+        required: true
+        type: string
+
+jobs:
+  reusable_workflow_job:
+    runs-on: ubuntu-latest
+    Steps:
+        name: say something
+        run: |
+            echo "Firstname is ${inputs.first-name}"
+            echo "lastname is ${secrets.last-name}"

@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Good Day $1 !!"
+echo "Good Day $first-name !!"
